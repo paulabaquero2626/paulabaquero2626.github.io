@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: black;
+}
+.bienvenida{
+	font-size: 65px;
+	font-weight: bold;
+	font-family:Drift Wood;
+	color: orange;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-area: bienvenida;
+}
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-area: menu;
+}
+.logo{
+	background-image: url("IMAGENES/LOGO.jpg");
+	background-size: 100% ;
+	grid-area: logo;
+	border: 5px solid;
+}
+.header{
+	width: 100%;
+	height: 10em;
+	display: grid;
+	grid-template-areas:
+    	'bienvenida bienvenida bienvenida bienvenida logo logo'
+    	'menu menu menu menu logo logo';
+  	grid-gap: 10px;
+}
+ul, ol {
+	list-style:none;
+}
+.nav > li {
+	float:left;
+}
+.nav li a {
+	background-color:orange;
+	color:black;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+	font-family:Showcard Gothic;
+}
+.nav li a:hover {
+	background-color:#434343;
+}
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+.nav li:hover > ul {
+	display:block;
+}
+.nav li ul li {
+	position:relative;
+}
+.nav li ul li ul {
+	right:-140px;
+	top:0px;
+}
+.contenido{
+	width: 75%;
+	color: white;
+	font-size: 1.5em;
+	font-family:papyrus;
+}
+.contenido img{
+	margin-bottom: 1em;
+}
+.label{
+	margin-left: 3em;
+	margin-right: 3em;
+}
+.footer{
+	width: 100%;
+	margin-top: 3em;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	border-top: 3px solid white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.contacto{
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family:papyrus;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contacto img{
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
